@@ -2,7 +2,7 @@
 @import "_mixins";
 
 .header {
-  background-color: $primary-color-dark;
+  background-color: $accent-color-light;
   color: $primary-color-text;
   height: 95vh;
   @include flex-col-center;
