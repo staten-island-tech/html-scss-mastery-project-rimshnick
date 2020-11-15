@@ -2,28 +2,68 @@
 /*font*/
 /* colors */
 /*font*/
-.header {
-  background-color: #000000;
-  color: #fff;
-  height: 95vh;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nyc {
+  font-size: 4.5rem;
+}
+
+.center-in-container {
+  margin: auto 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.header-title {
-  font-size: 8rem;
-  text-align: center;
+.nav-menu li {
+  padding: 0 1.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-menu a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: #fff;
+  border-bottom: #000000 0.4rem solid;
+}
+
+#nav-bar #nav-bar-content {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#nav-bar #nav-bar-content h1 {
+  margin-left: 3rem;
 }
 
 html,
