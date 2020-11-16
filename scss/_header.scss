@@ -48,17 +48,26 @@ button {
   padding: 0.5rem;
   text-decoration: none;
   background: white;
-  border: white;
-  border: 0.2rem solid;
-  border-image-source: linear-gradient(
-    10deg,
-    $accent-color-light,
-    $accent-color-medium
-  );
-  border-image-slice: 1;
-  transition: all 0.3s ease;
+  display: inline-block;
+  color: $primary-color-dark;
+  text-decoration: none;
+  border: 1rem white solid;
+  transition: all 0.4s ease;
+}
+
+.button::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: linear-gradient($accent-color-light, $accent-color-medium);
+  transition: width 0.3s;
+}
+
+.button:hover::after {
+  width: 100%;
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
