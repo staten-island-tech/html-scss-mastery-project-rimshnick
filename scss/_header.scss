@@ -9,7 +9,22 @@ header {
   height: auto;
   border-bottom: $primary-color-dark 0.4rem solid;
 }
+/* EMPIRE STATE BUILDING IMAGE*/
+.empire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 10rem;
+}
 
+.empire img {
+  width: 7rem;
+  height: 10rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* NEW YORK CITY "LOGO" */
 .left-side {
   display: flex;
   flex-direction: row;
@@ -25,7 +40,7 @@ header {
   padding-bottom: 1rem;
   padding-left: 1rem;
 }
-
+/* NAV BAR SUBSECTIONS */
 .right-side {
   display: flex;
   flex-direction: row;
@@ -54,7 +69,7 @@ button {
   border: 1rem white solid;
   transition: all 0.4s ease;
 }
-
+/* NAV BAR EFFECTS */
 .button::after {
   content: " ";
   display: block;
@@ -71,7 +86,7 @@ button {
 button:hover {
   transform: scale(1.1);
 }
-
+/* MEDIA QUERY CHANGES */
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
@@ -86,6 +101,8 @@ button:hover {
   }
   .left-side h1 {
     text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
   }
   .right-side button {
     font-size: 2.5rem;
@@ -94,8 +111,14 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
     padding-bottom: 1rem;
+  }
+  .empire {
+    width: 3.5rem;
+    height: 5rem;
+  }
+  .empire img {
+    width: 3.5rem;
+    height: 5rem;
   }
 }

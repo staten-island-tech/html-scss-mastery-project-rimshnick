@@ -20,6 +20,29 @@ header {
   border-bottom: #000000 0.4rem solid;
 }
 
+/* EMPIRE STATE BUILDING IMAGE*/
+.empire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 7rem;
+  height: 10rem;
+}
+
+.empire img {
+  width: 7rem;
+  height: 10rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* NEW YORK CITY "LOGO" */
 .left-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +66,7 @@ header {
   padding-left: 1rem;
 }
 
+/* NAV BAR SUBSECTIONS */
 .right-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +104,7 @@ button {
   transition: all 0.4s ease;
 }
 
+/* NAV BAR EFFECTS */
 .button::after {
   content: " ";
   display: block;
@@ -100,6 +125,7 @@ button:hover {
           transform: scale(1.1);
 }
 
+/* MEDIA QUERY CHANGES */
 @media screen and (max-width: 1000px) {
   header {
     -webkit-box-orient: vertical;
@@ -126,6 +152,8 @@ button:hover {
   }
   .left-side h1 {
     text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
   }
   .right-side button {
     font-size: 2.5rem;
@@ -141,9 +169,15 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
     padding-bottom: 1rem;
+  }
+  .empire {
+    width: 3.5rem;
+    height: 5rem;
+  }
+  .empire img {
+    width: 3.5rem;
+    height: 5rem;
   }
 }
 
