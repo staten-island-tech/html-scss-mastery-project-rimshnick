@@ -72,17 +72,32 @@ button {
   padding: 0.5rem;
   text-decoration: none;
   background: white;
-  border: white;
-  border: 0.2rem solid;
-  border-image-source: linear-gradient(10deg, #18ffff, #1de9b6);
-  border-image-slice: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  border: 1rem white solid;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.button::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#18ffff), to(#1de9b6));
+  background: linear-gradient(#18ffff, #1de9b6);
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.button:hover::after {
+  width: 100%;
 }
 
 button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 html,
