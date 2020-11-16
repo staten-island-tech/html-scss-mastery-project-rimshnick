@@ -1,0 +1,64 @@
+@import "_variables";
+@import "_mixins";
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  border-bottom: $primary-color-dark 0.4rem solid;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 8.5rem;
+  padding-left: 2rem;
+  margin: 0 auto;
+  width: 30vw;
+}
+
+.left-side h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.right-side button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+button {
+  font-family: $font;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+  background: white;
+  border: white;
+  border: 0.2rem solid;
+  border-image-source: linear-gradient(
+    10deg,
+    $accent-color-light,
+    $accent-color-medium
+  );
+  border-image-slice: 1;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
