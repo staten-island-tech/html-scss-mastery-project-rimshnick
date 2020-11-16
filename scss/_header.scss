@@ -87,6 +87,20 @@ button:hover {
   transform: scale(1.1);
 }
 /* MEDIA QUERY CHANGES */
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+  .left-side {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .left-side h1 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
