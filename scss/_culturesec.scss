@@ -4,14 +4,52 @@
 .culture-container {
   padding-left: 1rem;
   @include flex-row-center;
+  background-color: $primary-color-dark;
+  color: $primary-color-text;
+  border: 0.35rem white solid;
+  width: 100%;
+  height: auto;
+}
+
+.culture-label {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 9rem;
+  width: 20%;
 }
 
 .culture-images {
-  width: 30rem;
-  height: 30rem;
+  width: 40%;
+  height: auto;
+  margin: 2rem;
+  position: relative;
 }
 
-.culture-images img {
-  width: 10rem;
+.fire-escape {
+  top: 15rem;
+  left: 15%;
+}
+
+.subway {
+  top: 2rem;
+  right: 0;
+}
+
+.side-building {
+  top: -2rem;
+  left: 0;
+}
+
+.culture-image {
+  position: absolute;
   height: 20rem;
+}
+
+.culture-text {
+  width: 35%;
+}
+
+.culture-text p {
+  font-size: 2rem;
+  text-align: center;
 }
