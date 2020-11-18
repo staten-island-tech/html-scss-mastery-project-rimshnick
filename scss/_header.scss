@@ -2,9 +2,7 @@
 @import "_mixins";
 
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex-row-center;
   justify-content: space-between;
   height: auto;
   border-bottom: $primary-color-dark 0.4rem solid;
@@ -26,9 +24,7 @@ header {
 
 /* NEW YORK CITY "LOGO" */
 .left-side {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex-row-center;
   font-size: 8.5rem;
   padding-left: 1rem;
   margin: 0 auto;
@@ -42,9 +38,7 @@ header {
 }
 /* NAV BAR SUBSECTIONS */
 .right-side {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex-row-center;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -90,9 +84,8 @@ button:hover {
 @media screen and (min-width: 1001px) and (max-width: 1400px) {
   .left-side {
     width: 80%;
-    display: flex;
+    @include flex-row-center;
     justify-content: space-around;
-    align-items: center;
   }
   .left-side h1 {
     text-align: center;
@@ -103,15 +96,13 @@ button:hover {
 
 @media screen and (max-width: 1000px) {
   header {
-    flex-direction: column;
-    align-items: center;
+    @include flex-col-center;
     justify-content: space-between;
   }
   .left-side {
     width: 80%;
-    display: flex;
+    @include flex-row-center;
     justify-content: space-around;
-    align-items: center;
   }
   .left-side h1 {
     text-align: center;
@@ -122,9 +113,7 @@ button:hover {
     font-size: 2.5rem;
   }
   .right-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-col-center;
     padding-bottom: 1rem;
   }
   .empire {
