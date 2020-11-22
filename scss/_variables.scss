@@ -7,5 +7,14 @@ $accent-color-medium: #1de9b6;
 $secondary-color-dark: #3c1afa;
 $tertiary-color-extras: #e0e0e0;
 
-/*font*/
+/* font */
 $font: "Rajdhani", sans-serif;
+
+/* media query - device sizes */
+$mobile-max: 480px;
+$tablet-min: 481px;
+$tablet-max: 800px;
+$small-window-min: 800px;
+$small-window-max: 1150px;
+$desktop-min: 1151px;
+$desktop-max: 1400px;

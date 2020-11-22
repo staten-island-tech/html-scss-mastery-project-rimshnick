@@ -8,3 +8,18 @@
   flex-direction: row;
   align-items: center;
 }
+
+/*@mixin media-query-mobile {
+  @media screen and (max-width: 480px);
+}
+
+@mixin media-query-tablet {
+  @media screen and (min-width: 481px) and (max-width: 769px);
+}
+
+@mixin media-query-laptop {
+  @media screen and (min-width: 769px) and (max-width: 1024px);
+}
+
+@mixin media-query-desktop {
+  @media screen and (min-width: 1025px) and (max-width: 1200px);*/

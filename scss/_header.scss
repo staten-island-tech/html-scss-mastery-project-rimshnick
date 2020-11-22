@@ -87,7 +87,7 @@ button:focus {
 }
 
 /* MEDIA QUERY CHANGES */
-@media screen and (min-width: 1001px) and (max-width: 1400px) {
+@media screen and (max-width: $small-window-max) {
   .left-side {
     width: 80%;
     @include flex-row-center;
@@ -98,9 +98,6 @@ button:focus {
     padding-top: 0.5rem;
     padding-bottom: 0rem;
   }
-}
-
-@media screen and (max-width: 1000px) {
   header {
     @include flex-col-center;
     justify-content: space-between;
