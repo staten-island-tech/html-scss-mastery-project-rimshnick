@@ -180,6 +180,9 @@ button:hover {
   }
   .right-side button {
     font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    height: 5rem;
   }
   .right-side {
     display: -webkit-box;
@@ -192,7 +195,8 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 0.25rem;
   }
   .empire {
     width: 3.5rem;
@@ -276,8 +280,8 @@ button:hover {
 
 .culture-images img {
   position: absolute;
-  -webkit-animation: culture-images 12s infinite;
-          animation: culture-images 12s infinite;
+  -webkit-animation: culture-images 28s infinite;
+          animation: culture-images 28s infinite;
   opacity: 0;
   width: 100%;
   height: auto;
@@ -301,9 +305,29 @@ button:hover {
   }
 }
 
+.culture-images img:nth-child(7) {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.culture-images img:nth-child(6) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.culture-images img:nth-child(5) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.culture-images img:nth-child(4) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
 .culture-images img:nth-child(3) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .culture-images img:nth-child(2) {
@@ -312,8 +336,8 @@ button:hover {
 }
 
 .culture-images img:nth-child(1) {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 /* TEXT ON RIGHT */
