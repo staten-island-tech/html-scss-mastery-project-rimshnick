@@ -100,12 +100,13 @@ button:hover {
     justify-content: space-between;
   }
   .left-side {
-    width: 80%;
-    @include flex-row-center;
-    justify-content: space-around;
+    width: auto;
+    display: flex;
+    align-items: center;
   }
   .left-side h1 {
     text-align: center;
+    padding-left: 0rem;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
   }
