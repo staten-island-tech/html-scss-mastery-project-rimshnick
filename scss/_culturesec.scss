@@ -96,9 +96,17 @@
     padding-top: 2rem;
     width: auto;
   }
+  .culture-images {
+    width: 40rem;
+    height: 35rem;
+  }
   .culture-text {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .culture-text p {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
