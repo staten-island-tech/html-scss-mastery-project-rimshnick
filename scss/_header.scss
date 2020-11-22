@@ -79,6 +79,13 @@ button {
 button:hover {
   transform: scale(1.075);
 }
+
+button:focus {
+  transform: scale(1.075);
+  color: $accent-color-mix;
+  font-weight: bold;
+}
+
 /* MEDIA QUERY CHANGES */
 @media screen and (min-width: 1001px) and (max-width: 1400px) {
   .left-side {
