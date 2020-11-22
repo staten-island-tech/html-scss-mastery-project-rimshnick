@@ -353,6 +353,9 @@ button:hover {
     padding-top: 2rem;
     width: auto;
   }
+  .culture-image-parent {
+    margin-top: 0.5rem;
+  }
   .culture-images {
     width: 40rem;
     height: 35rem;
