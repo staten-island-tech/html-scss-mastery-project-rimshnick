@@ -2,12 +2,10 @@
 @import "_mixins";
 
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex-row-center;
   justify-content: space-between;
   height: auto;
-  border-bottom: $primary-color-dark 0.4rem solid;
+  border-bottom: $accent-color-mix 0.3rem solid;
 }
 /* EMPIRE STATE BUILDING IMAGE*/
 .empire {
@@ -26,9 +24,7 @@ header {
 
 /* NEW YORK CITY "LOGO" */
 .left-side {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex-row-center;
   font-size: 8.5rem;
   padding-left: 1rem;
   margin: 0 auto;
@@ -42,9 +38,7 @@ header {
 }
 /* NAV BAR SUBSECTIONS */
 .right-side {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex-row-center;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -59,7 +53,6 @@ header {
 button {
   font-family: $font;
   font-size: 3rem;
-  font-weight: bold;
   padding: 0.5rem;
   text-decoration: none;
   background: white;
@@ -75,7 +68,7 @@ button {
   display: block;
   width: 0;
   height: 2px;
-  background: linear-gradient($accent-color-light, $accent-color-medium);
+  background: $accent-color-mix;
   transition: width 0.3s;
 }
 
@@ -84,15 +77,21 @@ button {
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.075);
 }
+
+button:focus {
+  transform: scale(1.075);
+  color: $accent-color-mix;
+  font-weight: bold;
+}
+
 /* MEDIA QUERY CHANGES */
 @media screen and (min-width: 1001px) and (max-width: 1400px) {
   .left-side {
     width: 80%;
-    display: flex;
+    @include flex-row-center;
     justify-content: space-around;
-    align-items: center;
   }
   .left-side h1 {
     text-align: center;
@@ -103,33 +102,34 @@ button:hover {
 
 @media screen and (max-width: 1000px) {
   header {
-    flex-direction: column;
-    align-items: center;
+    @include flex-col-center;
     justify-content: space-between;
   }
   .left-side {
-    width: 80%;
+    width: auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
   }
   .left-side h1 {
     text-align: center;
+    padding-left: 0rem;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
   }
   .right-side button {
     font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
   .right-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 1rem;
+    @include flex-col-center;
+    padding-bottom: 2rem;
+    margin-top: 0.25rem;
   }
   .empire {
     width: 3.5rem;
     height: 5rem;
+    padding-top: 1rem;
   }
   .empire img {
     width: 3.5rem;

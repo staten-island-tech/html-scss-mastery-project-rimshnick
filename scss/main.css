@@ -17,7 +17,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: auto;
-  border-bottom: #000000 0.4rem solid;
+  border-bottom: #00ffdd 0.3rem solid;
 }
 
 /* EMPIRE STATE BUILDING IMAGE*/
@@ -92,7 +92,6 @@ header {
 button {
   font-family: "Rajdhani", sans-serif;
   font-size: 3rem;
-  font-weight: bold;
   padding: 0.5rem;
   text-decoration: none;
   background: white;
@@ -110,8 +109,7 @@ button {
   display: block;
   width: 0;
   height: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#18ffff), to(#1de9b6));
-  background: linear-gradient(#18ffff, #1de9b6);
+  background: #00ffdd;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
@@ -121,8 +119,15 @@ button {
 }
 
 button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
+}
+
+button:focus {
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
+  color: #00ffdd;
+  font-weight: bold;
 }
 
 /* MEDIA QUERY CHANGES */
@@ -132,11 +137,15 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .left-side h1 {
     text-align: center;
@@ -147,6 +156,9 @@ button:hover {
 
 @media screen and (max-width: 1000px) {
   header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -159,23 +171,24 @@ button:hover {
             justify-content: space-between;
   }
   .left-side {
-    width: 80%;
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .left-side h1 {
     text-align: center;
+    padding-left: 0rem;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
   }
   .right-side button {
     font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
   .right-side {
     display: -webkit-box;
@@ -188,11 +201,13 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 0.25rem;
   }
   .empire {
     width: 3.5rem;
     height: 5rem;
+    padding-top: 1rem;
   }
   .empire img {
     width: 3.5rem;
@@ -204,6 +219,193 @@ button:hover {
 /*font*/
 .intro-container {
   font-size: 16rem;
+}
+
+/* colors */
+/*font*/
+.culture-container {
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  color: #fff;
+  border-top: 0.35rem white solid;
+  width: 100%;
+  height: auto;
+}
+
+/* CULTURE LABEL */
+.culture-label {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 9rem;
+  width: 20%;
+}
+
+/* IMAGES */
+.culture-image-parent {
+  width: 60rem;
+  height: 40rem;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.culture-images {
+  margin: 3rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45rem;
+  height: 38rem;
+  overflow: hidden;
+}
+
+.culture-images img {
+  position: absolute;
+  -webkit-animation: culture-images 28s infinite;
+          animation: culture-images 28s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes culture-images {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes culture-images {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.culture-images img:nth-child(7) {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.culture-images img:nth-child(6) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.culture-images img:nth-child(5) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.culture-images img:nth-child(4) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.culture-images img:nth-child(3) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.culture-images img:nth-child(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.culture-images img:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+/* TEXT ON RIGHT */
+.culture-text {
+  width: 35%;
+}
+
+.culture-text p {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+/* MEDIA QUERY CHANGES */
+@media screen and (max-width: 1000px) {
+  .culture-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .culture-label {
+    padding-top: 2rem;
+    width: auto;
+  }
+  .culture-image-parent {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .culture-images {
+    width: 40rem;
+    height: 35rem;
+  }
+  .culture-text {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .culture-text p {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
 }
 
 html,
