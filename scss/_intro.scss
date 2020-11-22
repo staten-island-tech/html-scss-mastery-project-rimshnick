@@ -3,4 +3,7 @@
 
 .intro-container {
   font-size: 16rem;
+  @include flex-row-center;
+  justify-content: center;
+  height: 45vh;
 }
