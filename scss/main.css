@@ -17,7 +17,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: auto;
-  border-bottom: #000000 0.4rem solid;
+  border-bottom: #00ffdd 0.3rem solid;
 }
 
 /* EMPIRE STATE BUILDING IMAGE*/
@@ -92,7 +92,6 @@ header {
 button {
   font-family: "Rajdhani", sans-serif;
   font-size: 3rem;
-  font-weight: bold;
   padding: 0.5rem;
   text-decoration: none;
   background: white;
@@ -110,8 +109,7 @@ button {
   display: block;
   width: 0;
   height: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#18ffff), to(#1de9b6));
-  background: linear-gradient(#18ffff, #1de9b6);
+  background: #00ffdd;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
@@ -121,8 +119,8 @@ button {
 }
 
 button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
 }
 
 /* MEDIA QUERY CHANGES */

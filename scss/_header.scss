@@ -5,7 +5,7 @@ header {
   @include flex-row-center;
   justify-content: space-between;
   height: auto;
-  border-bottom: $primary-color-dark 0.4rem solid;
+  border-bottom: $accent-color-mix 0.3rem solid;
 }
 /* EMPIRE STATE BUILDING IMAGE*/
 .empire {
@@ -53,7 +53,6 @@ header {
 button {
   font-family: $font;
   font-size: 3rem;
-  font-weight: bold;
   padding: 0.5rem;
   text-decoration: none;
   background: white;
@@ -69,7 +68,7 @@ button {
   display: block;
   width: 0;
   height: 2px;
-  background: linear-gradient($accent-color-light, $accent-color-medium);
+  background: $accent-color-mix;
   transition: width 0.3s;
 }
 
@@ -78,7 +77,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.075);
 }
 /* MEDIA QUERY CHANGES */
 @media screen and (min-width: 1001px) and (max-width: 1400px) {
