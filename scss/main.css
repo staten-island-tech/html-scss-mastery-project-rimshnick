@@ -200,6 +200,12 @@ button:hover {
   }
 }
 
+/* colors */
+/*font*/
+.intro-container {
+  font-size: 16rem;
+}
+
 html,
 body,
 * {
