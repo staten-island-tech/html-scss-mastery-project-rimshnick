@@ -77,16 +77,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 8.5rem;
   padding-left: 1rem;
   margin: 0 auto;
   width: 40vw;
+  list-style-type: none;
 }
 
-.left-side h1 {
+.left-side .newyorkcity {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  text-decoration: none;
+  font-size: 5rem;
 }
 
 /* NAV BAR SUBSECTIONS */
@@ -121,7 +123,6 @@ a {
   background: white;
   display: inline-block;
   color: #000000;
-  text-decoration: none;
   border: 1rem white solid;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -158,6 +159,26 @@ a:focus {
   font-weight: bold;
 }
 
+.newyorkcity::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0rem;
+  background: white;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.newyorkcity:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.newyorkcity:focus {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 /* MEDIA QUERY CHANGES */
 @media screen and (min-width: 1180px) and (max-width: 1400px) {
   .left-side {
@@ -175,9 +196,9 @@ a:focus {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .left-side h1 {
+  .left-side .newyorkcity {
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 0rem;
     padding-bottom: 0rem;
   }
 }
@@ -208,7 +229,7 @@ a:focus {
             align-items: center;
     font-size: 7.5rem;
   }
-  .left-side h1 {
+  .left-side .newyorkcity {
     text-align: center;
     padding-left: 0rem;
     padding-top: 0.5rem;
