@@ -7,6 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="scss/main.css" />
   </head>
   <body>
@@ -17,14 +22,20 @@
       <div class="left-side">
         <h1>New York City</h1>
       </div>
-      <div class="right-side">
-        <button class="button">CULTURE</button>
-        <button class="button">ATTRACTIONS</button>
-        <button class="button">RESTAURANTS</button>
-        <button class="button">MORE</button>
+      <div class="navbar">
+        <li><a href="#culture">CULTURE</a></li>
+        <li><a href="#attractions">ATTRACTIONS</a></li>
+        <li><a href="#restaurants">RESTAURANTS</a></li>
+        <li><a href="#more" class="button-more">MORE</a></li>
       </div>
     </header>
-    <section class="culture-container">
+    <div class="video-and-text">
+      <video id="video" autoplay muted loop>
+        <source src="/video/night-drone-nyc.mp4" type="video/mp4" />
+      </video>
+      <h class="video-text">NYC</h>
+    </div>
+    <section id="culture" class="culture-container">
       <div class="culture-label">
         <h>CULTURE</h>
       </div>

@@ -6,9 +6,11 @@
   @include flex-row-center;
   background-color: $primary-color-dark;
   color: $primary-color-text;
-  border-top: 0.35rem white solid;
+  border-top: 0.1rem $accent-color-mix solid;
   width: 100%;
   height: auto;
+  padding-bottom: 8rem;
+  padding-top: 12rem;
 }
 
 /* CULTURE LABEL */
@@ -83,6 +85,7 @@
 }
 
 .culture-text p {
+  font-family: $small-font;
   font-size: 2rem;
   text-align: center;
   padding-top: 3rem;

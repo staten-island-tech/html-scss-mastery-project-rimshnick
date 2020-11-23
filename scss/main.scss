@@ -1,6 +1,7 @@
 @import "_variables";
-@import "_header";
+@import "_navbar";
 @import "_mixins";
+@import "_header";
 @import "_culturesec";
 
 html,
@@ -12,6 +13,6 @@ body,
   font-size: 62.5%;
 }
 html {
-  font-family: $font;
+  font-family: $large-font;
   min-height: 100%;
 }

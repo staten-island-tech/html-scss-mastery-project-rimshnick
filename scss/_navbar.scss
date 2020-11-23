@@ -1,0 +1,147 @@
+@import "_variables";
+@import "_mixins";
+
+header {
+  @include flex-row-center;
+  justify-content: space-between;
+  height: auto;
+  border-bottom: $accent-color-mix 0.1rem solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $primary-color-text;
+  z-index: 1;
+}
+/* EMPIRE STATE BUILDING IMAGE*/
+.empire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 10rem;
+}
+
+.empire img {
+  width: 7rem;
+  height: 10rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* NEW YORK CITY "LOGO" */
+.left-side {
+  @include flex-row-center;
+  font-size: 8.5rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+  width: 40vw;
+}
+
+.left-side h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+/* NAV BAR SUBSECTIONS */
+.navbar {
+  @include flex-row-center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.navbar a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+a {
+  font-family: $large-font;
+  font-size: 3rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  background: white;
+  display: inline-block;
+  color: $primary-color-dark;
+  text-decoration: none;
+  border: 1rem white solid;
+  transition: all 0.4s ease;
+}
+
+.button-more {
+  color: $tertiary-color-extras;
+}
+/* NAV BAR EFFECTS */
+a::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: $accent-color-mix;
+  transition: width 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  transform: scale(1.075);
+}
+
+a:focus {
+  transform: scale(1.075);
+  color: $accent-color-mix;
+  font-weight: bold;
+}
+
+/* MEDIA QUERY CHANGES */
+@media screen and (min-width: 1180px) and (max-width: 1400px) {
+  .left-side {
+    width: 80%;
+    @include flex-row-center;
+    justify-content: space-around;
+  }
+  .left-side h1 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 1179px) {
+  header {
+    @include flex-col-center;
+    justify-content: space-between;
+  }
+  .left-side {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  .left-side h1 {
+    text-align: center;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+  }
+  .navbar a {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .navbar {
+    @include flex-col-center;
+    padding-bottom: 2rem;
+    margin-top: 0.25rem;
+  }
+  .empire {
+    width: 3.5rem;
+    height: 5rem;
+    padding-top: 1rem;
+  }
+  .empire img {
+    width: 3.5rem;
+    height: 5rem;
+  }
+}

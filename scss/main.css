@@ -24,16 +24,21 @@ header {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: auto;
-  border-bottom: #00ffdd 0.3rem solid;
+  border-bottom: #00ffdd 0.1rem solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
 }
 
 /* EMPIRE STATE BUILDING IMAGE*/
@@ -42,11 +47,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 7rem;
   height: 10rem;
 }
@@ -65,11 +70,11 @@ header {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 8.5rem;
   padding-left: 1rem;
   margin: 0 auto;
@@ -83,29 +88,29 @@ header {
 }
 
 /* NAV BAR SUBSECTIONS */
-.right-side {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.right-side button {
+.navbar a {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-button {
+a {
   font-family: "Rajdhani", sans-serif;
   font-size: 3rem;
   padding: 0.5rem;
@@ -119,8 +124,12 @@ button {
   transition: all 0.4s ease;
 }
 
+.button-more {
+  color: #a8a8a8;
+}
+
 /* NAV BAR EFFECTS */
-.button::after {
+a::after {
   content: " ";
   display: block;
   width: 0;
@@ -130,24 +139,24 @@ button {
   transition: width 0.3s;
 }
 
-.button:hover::after {
+a:hover::after {
   width: 100%;
 }
 
-button:hover {
+a:hover {
   -webkit-transform: scale(1.075);
-          transform: scale(1.075);
+  transform: scale(1.075);
 }
 
-button:focus {
+a:focus {
   -webkit-transform: scale(1.075);
-          transform: scale(1.075);
+  transform: scale(1.075);
   color: #00ffdd;
   font-weight: bold;
 }
 
 /* MEDIA QUERY CHANGES */
-@media screen and (max-width: 1150px) {
+@media screen and (min-width: 1180px) and (max-width: 1400px) {
   .left-side {
     width: 80%;
     display: -webkit-box;
@@ -155,33 +164,36 @@ button:focus {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .left-side h1 {
     text-align: center;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
   }
+}
+
+@media screen and (max-width: 1179px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .left-side {
     width: auto;
@@ -189,8 +201,8 @@ button:focus {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .left-side h1 {
     text-align: center;
@@ -198,22 +210,22 @@ button:focus {
     padding-top: 0.5rem;
     padding-bottom: 0rem;
   }
-  .right-side button {
+  .navbar a {
     font-size: 2.5rem;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
   }
-  .right-side {
+  .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-bottom: 2rem;
     margin-top: 0.25rem;
   }
@@ -259,6 +271,67 @@ button:focus {
 
 @mixin media-query-desktop {
   @media screen and (min-width: 1025px) and (max-width: 1200px);*/
+/*font*/
+.intro-container {
+  font-size: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 45vh;
+}
+
+#video {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.video-and-text {
+  position: relative;
+  text-align: center;
+}
+
+.video-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  font-size: 12rem;
+  color: #fff;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: black;
+}
+
+@media screen and (max-width: 1179px) {
+  .video-text {
+    font-size: 8rem;
+  }
+  .video-and-text {
+    margin-top: 40rem;
+  }
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1300px) {
+  .video-text {
+    top: 35%;
+  }
+}
+
+/* colors */
+/*font*/
 .culture-container {
   padding-left: 1rem;
   display: -webkit-box;
@@ -266,16 +339,18 @@ button:focus {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #000000;
   color: #fff;
-  border-top: 0.35rem white solid;
+  border-top: 0.1rem #00ffdd solid;
   width: 100%;
   height: auto;
+  padding-bottom: 8rem;
+  padding-top: 12rem;
 }
 
 /* CULTURE LABEL */
@@ -298,14 +373,14 @@ button:focus {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .culture-images {
@@ -316,11 +391,11 @@ button:focus {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 45rem;
   height: 38rem;
   overflow: hidden;
@@ -329,7 +404,7 @@ button:focus {
 .culture-images img {
   position: absolute;
   -webkit-animation: culture-images 28s infinite;
-          animation: culture-images 28s infinite;
+  animation: culture-images 28s infinite;
   opacity: 0;
   width: 100%;
   height: auto;
@@ -355,37 +430,37 @@ button:focus {
 
 .culture-images img:nth-child(7) {
   -webkit-animation-delay: 24s;
-          animation-delay: 24s;
+  animation-delay: 24s;
 }
 
 .culture-images img:nth-child(6) {
   -webkit-animation-delay: 20s;
-          animation-delay: 20s;
+  animation-delay: 20s;
 }
 
 .culture-images img:nth-child(5) {
   -webkit-animation-delay: 16s;
-          animation-delay: 16s;
+  animation-delay: 16s;
 }
 
 .culture-images img:nth-child(4) {
   -webkit-animation-delay: 12s;
-          animation-delay: 12s;
+  animation-delay: 12s;
 }
 
 .culture-images img:nth-child(3) {
   -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  animation-delay: 8s;
 }
 
 .culture-images img:nth-child(2) {
   -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .culture-images img:nth-child(1) {
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 /* TEXT ON RIGHT */
@@ -394,6 +469,7 @@ button:focus {
 }
 
 .culture-text p {
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 2rem;
   text-align: center;
   padding-top: 3rem;
@@ -423,14 +499,14 @@ button:focus {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .culture-label {
     padding-top: 2rem;
@@ -463,7 +539,7 @@ body,
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
 }
 
