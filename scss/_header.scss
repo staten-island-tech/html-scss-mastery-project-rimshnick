@@ -31,16 +31,17 @@
   -webkit-text-stroke-color: black;
 }
 
+@media screen and (min-width: 1180px) and (max-width: 1300px) {
+  .video-text {
+    top: 35%;
+  }
+}
+
 @media screen and (max-width: 1179px) {
   .video-text {
     font-size: 8rem;
   }
   .video-and-text {
-    margin-top: 40rem;
-  }
-}
-@media screen and (min-width: 1180px) and (max-width: 1300px) {
-  .video-text {
-    top: 35%;
+    margin-top: 14rem;
   }
 }
