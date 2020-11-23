@@ -260,6 +260,12 @@ button:focus {
   -webkit-text-stroke-color: black;
 }
 
+@media screen and (max-width: 1000px) {
+  .video-text {
+    font-size: 8rem;
+  }
+}
+
 /* colors */
 /*font*/
 .culture-container {
