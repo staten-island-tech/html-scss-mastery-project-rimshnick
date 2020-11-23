@@ -6,7 +6,7 @@
   @include flex-row-center;
   background-color: $primary-color-dark;
   color: $primary-color-text;
-  border-top: 0.35rem white solid;
+  border-top: 0.1rem $accent-color-mix solid;
   width: 100%;
   height: auto;
 }
