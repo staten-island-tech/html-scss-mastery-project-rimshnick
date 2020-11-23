@@ -372,6 +372,7 @@ button:focus {
 }
 
 .culture-text p {
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 2rem;
   text-align: center;
   padding-top: 3rem;
