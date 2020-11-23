@@ -156,3 +156,9 @@ a:focus {
     margin-right: 0.5rem;
   }
 }
+
+@media screen and (max-width: $mobile-max) {
+  .navbar a {
+    font-size: 1.5rem;
+  }
+}

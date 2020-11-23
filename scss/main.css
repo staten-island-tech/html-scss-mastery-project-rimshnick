@@ -253,6 +253,12 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 1.5rem;
+  }
+}
+
 /*@mixin media-query-mobile {
   @media screen and (max-width: 480px);
 }
