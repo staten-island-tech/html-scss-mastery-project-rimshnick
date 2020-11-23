@@ -46,6 +46,7 @@ header {
   @include flex-row-center;
   padding-left: 3rem;
   padding-right: 3rem;
+  list-style-type: none;
 }
 
 .navbar a {
