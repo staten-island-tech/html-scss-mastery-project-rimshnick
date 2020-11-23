@@ -30,16 +30,18 @@ header {
 /* NEW YORK CITY "LOGO" */
 .left-side {
   @include flex-row-center;
-  font-size: 8.5rem;
   padding-left: 1rem;
   margin: 0 auto;
   width: 40vw;
+  list-style-type: none;
 }
 
-.left-side h1 {
+.left-side .newyorkcity {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  text-decoration: none;
+  font-size: 5rem;
 }
 /* NAV BAR SUBSECTIONS */
 .navbar {
@@ -64,7 +66,6 @@ a {
   background: white;
   display: inline-block;
   color: $primary-color-dark;
-  text-decoration: none;
   border: 1rem white solid;
   transition: all 0.4s ease;
 }
@@ -96,6 +97,23 @@ a:focus {
   font-weight: bold;
 }
 
+.newyorkcity::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0rem;
+  background: white;
+  transition: width 0.3s;
+}
+
+.newyorkcity:hover {
+  transform: scale(1);
+}
+
+.newyorkcity:focus {
+  transform: scale(1);
+}
+
 /* MEDIA QUERY CHANGES */
 @media screen and (min-width: 1180px) and (max-width: 1400px) {
   .left-side {
@@ -103,9 +121,9 @@ a:focus {
     @include flex-row-center;
     justify-content: space-around;
   }
-  .left-side h1 {
+  .left-side .newyorkcity {
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 0rem;
     padding-bottom: 0rem;
   }
 }
@@ -121,7 +139,7 @@ a:focus {
     align-items: center;
     font-size: 7.5rem;
   }
-  .left-side h1 {
+  .left-side .newyorkcity {
     text-align: center;
     padding-left: 0rem;
     padding-top: 0.5rem;
