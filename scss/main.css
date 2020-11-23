@@ -72,7 +72,7 @@ header {
 }
 
 /* NAV BAR SUBSECTIONS */
-.right-side {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,14 +87,14 @@ header {
   padding-right: 3rem;
 }
 
-.right-side button {
+.navbar a {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-button {
+a {
   font-family: "Rajdhani", sans-serif;
   font-size: 3rem;
   padding: 0.5rem;
@@ -113,7 +113,7 @@ button {
 }
 
 /* NAV BAR EFFECTS */
-button::after {
+a::after {
   content: " ";
   display: block;
   width: 0;
@@ -123,16 +123,16 @@ button::after {
   transition: width 0.3s;
 }
 
-button:hover::after {
+a:hover::after {
   width: 100%;
 }
 
-button:hover {
+a:hover {
   -webkit-transform: scale(1.075);
           transform: scale(1.075);
 }
 
-button:focus {
+a:focus {
   -webkit-transform: scale(1.075);
           transform: scale(1.075);
   color: #00ffdd;
@@ -194,12 +194,12 @@ button:focus {
     padding-top: 0.5rem;
     padding-bottom: 0rem;
   }
-  .right-side button {
+  .navbar a {
     font-size: 2.5rem;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
   }
-  .right-side {
+  .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -303,6 +303,8 @@ button:focus {
   border-top: 0.1rem #00ffdd solid;
   width: 100%;
   height: auto;
+  padding-bottom: 8rem;
+  padding-top: 12rem;
 }
 
 /* CULTURE LABEL */
