@@ -119,6 +119,7 @@ a:focus {
     width: auto;
     display: flex;
     align-items: center;
+    font-size: 7.5rem;
   }
   .left-side h1 {
     text-align: center;
@@ -128,21 +129,44 @@ a:focus {
   }
   .navbar a {
     font-size: 2.5rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
   }
   .navbar {
-    @include flex-col-center;
-    padding-bottom: 2rem;
-    margin-top: 0.25rem;
+    @include flex-row-center;
+    padding-bottom: 0.25rem;
+    margin-top: 0rem;
   }
   .empire {
-    width: 3.5rem;
-    height: 5rem;
+    width: 2.5rem;
+    height: 3.5rem;
     padding-top: 1rem;
   }
   .empire img {
-    width: 3.5rem;
-    height: 5rem;
+    width: 2.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar a {
+    padding: 0rem;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: $mobile-max) {
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  .empire {
+    width: 0rem;
+    height: 0rem;
+  }
+  .empire img {
+    width: 0rem;
+    height: 0rem;
   }
 }
