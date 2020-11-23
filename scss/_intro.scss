@@ -21,18 +21,27 @@
 
 .video-text {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 0;
   font-size: 12rem;
   color: $primary-color-text;
   -webkit-text-stroke-width: 0.2rem;
   -webkit-text-stroke-color: black;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1179px) {
   .video-text {
     font-size: 8rem;
+  }
+  .video-and-text {
+    margin-top: 40rem;
+  }
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1300px) {
+  .video-text {
+    top: 35%;
   }
 }

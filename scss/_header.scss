@@ -6,6 +6,11 @@ header {
   justify-content: space-between;
   height: auto;
   border-bottom: $accent-color-mix 0.1rem solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $primary-color-text;
+  z-index: 1;
 }
 /* EMPIRE STATE BUILDING IMAGE*/
 .empire {
@@ -62,8 +67,12 @@ button {
   border: 1rem white solid;
   transition: all 0.4s ease;
 }
+
+.button-more {
+  color: $tertiary-color-extras;
+}
 /* NAV BAR EFFECTS */
-.button::after {
+button::after {
   content: " ";
   display: block;
   width: 0;
@@ -72,7 +81,7 @@ button {
   transition: width 0.3s;
 }
 
-.button:hover::after {
+button:hover::after {
   width: 100%;
 }
 
@@ -87,7 +96,7 @@ button:focus {
 }
 
 /* MEDIA QUERY CHANGES */
-@media screen and (min-width: 1001px) and (max-width: 1400px) {
+@media screen and (min-width: 1180px) and (max-width: 1400px) {
   .left-side {
     width: 80%;
     @include flex-row-center;
@@ -100,7 +109,7 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1179px) {
   header {
     @include flex-col-center;
     justify-content: space-between;
