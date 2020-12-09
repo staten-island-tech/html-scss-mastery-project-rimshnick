@@ -636,9 +636,9 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -653,10 +653,10 @@ a:focus {
 
 /* ATTRACTIONS LABEL */
 .attractions-label {
-  padding-left: 5rem;
+  padding-left: 2rem;
   padding-right: 5rem;
   font-size: 9rem;
-  width: 20%;
+  width: 30%;
 }
 
 /* IMAGES */
@@ -664,6 +664,7 @@ a:focus {
   width: 60rem;
   height: 40rem;
   padding: 2rem 2rem 2rem 2rem;
+  padding-left: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -763,7 +764,7 @@ a:focus {
 
 /* TEXT ON RIGHT */
 .attractions-text {
-  width: 35%;
+  width: 33%;
 }
 
 .attractions-text p {
@@ -772,8 +773,8 @@ a:focus {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding-right: 0.5rem;
+  padding-left: 2rem;
 }
 
 /* MEDIA QUERY CHANGES */
