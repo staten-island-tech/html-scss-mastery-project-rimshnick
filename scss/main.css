@@ -255,13 +255,16 @@ a:focus {
     margin-top: 0rem;
   }
   .empire {
-    width: 2.5rem;
-    height: 3.5rem;
-    padding-top: 1rem;
+    width: 0rem;
+    height: 0rem;
+    padding-top: 0rem;
   }
   .empire img {
-    width: 2.5rem;
-    height: 3.5rem;
+    width: 0rem;
+    height: 0rem;
+  }
+  .empire img {
+    display: none;
   }
 }
 
@@ -271,6 +274,9 @@ a:focus {
     font-size: 2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+  .empire img {
+    display: none;
   }
 }
 
@@ -285,6 +291,9 @@ a:focus {
   .empire img {
     width: 0rem;
     height: 0rem;
+  }
+  .empire img {
+    display: none;
   }
 }
 
