@@ -1,0 +1,144 @@
+@import "_variables";
+@import "_mixins";
+
+.attractions-container {
+  padding-left: 1rem;
+  @include flex-row-center;
+  background-color: $primary-color-dark;
+  color: $primary-color-text;
+  border-top: 0.1rem $accent-color-mix solid;
+  width: 100%;
+  height: auto;
+  padding-bottom: 8rem;
+  padding-top: 12rem;
+}
+
+/* ATTRACTIONS LABEL */
+.attractions-label {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 9rem;
+  width: 20%;
+}
+
+/* IMAGES */
+.attractions-image-parent {
+  width: 60rem;
+  height: 40rem;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @include flex-row-center;
+  justify-content: center;
+}
+
+.attractions-images {
+  margin: 3rem;
+  position: relative;
+  @include flex-row-center;
+  width: 45rem;
+  height: 38rem;
+  overflow: hidden;
+}
+
+.attractions-images img {
+  position: absolute;
+  animation: attractions-images 28s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes attractions-images {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.attractions-images img:nth-child(7) {
+  animation-delay: 24s;
+}
+.attractions-images img:nth-child(6) {
+  animation-delay: 20s;
+}
+.attractions-images img:nth-child(5) {
+  animation-delay: 16s;
+}
+.attractions-images img:nth-child(4) {
+  animation-delay: 12s;
+}
+.attractions-images img:nth-child(3) {
+  animation-delay: 8s;
+}
+.attractions-images img:nth-child(2) {
+  animation-delay: 4s;
+}
+.attractions-images img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+/* TEXT ON RIGHT */
+.attractions-text {
+  width: 35%;
+}
+
+.attractions-text p {
+  font-family: $small-font;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+/* MEDIA QUERY CHANGES */
+@media screen and (min-width: $desktop-max) and (max-width: 2000px) {
+  .attractions-text {
+    padding-left: 10rem;
+  }
+  .attractions-label {
+    font-size: 10rem;
+  }
+  .attractions-text p {
+    font-size: 2.25rem;
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: $small-window-max) {
+  .attractions-images {
+    //width: 35rem;
+    //height: 30rem;
+  }
+  .attractions-container {
+    @include flex-col-center;
+    justify-content: space-between;
+  }
+  .attractions-label {
+    padding-top: 2rem;
+    width: auto;
+  }
+  .attractions-image-parent {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .attractions-images {
+    width: 40rem;
+    height: 35rem;
+  }
+  .attractions-text {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .attractions-text p {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    //font-size: 1.25rem;
+  }
+}
