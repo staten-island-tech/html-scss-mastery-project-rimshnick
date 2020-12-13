@@ -544,7 +544,7 @@ a:focus {
 
 /* TEXT ON RIGHT */
 .culture-text {
-  width: 35%;
+  width: 40%;
 }
 
 .culture-text p {
@@ -553,7 +553,7 @@ a:focus {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-right: 4rem;
+  padding-right: 2rem;
   padding-left: 4rem;
 }
 
@@ -631,7 +631,6 @@ a:focus {
 @mixin media-query-desktop {
   @media screen and (min-width: 1025px) and (max-width: 1200px);*/
 .attractions-container {
-  padding-left: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,7 +655,7 @@ a:focus {
   padding-left: 2rem;
   padding-right: 5rem;
   font-size: 9rem;
-  width: 30%;
+  width: 25%;
 }
 
 /* IMAGES */
@@ -664,7 +663,6 @@ a:focus {
   width: 60rem;
   height: 40rem;
   padding: 2rem 2rem 2rem 2rem;
-  padding-left: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -764,7 +762,7 @@ a:focus {
 
 /* TEXT ON RIGHT */
 .attractions-text {
-  width: 33%;
+  width: 40%;
 }
 
 .attractions-text p {
@@ -773,8 +771,8 @@ a:focus {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-right: 0.5rem;
-  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-left: 0rem;
 }
 
 /* MEDIA QUERY CHANGES */

@@ -2,7 +2,6 @@
 @import "_mixins";
 
 .attractions-container {
-  padding-left: 1rem;
   @include flex-row-rev-center;
   background-color: $primary-color-dark;
   color: $primary-color-text;
@@ -18,7 +17,7 @@
   padding-left: 2rem;
   padding-right: 5rem;
   font-size: 9rem;
-  width: 30%;
+  width: 25%;
 }
 
 /* IMAGES */
@@ -26,7 +25,6 @@
   width: 60rem;
   height: 40rem;
   padding: 2rem 2rem 2rem 2rem;
-  padding-left: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   @include flex-row-center;
@@ -82,7 +80,7 @@
 
 /* TEXT ON RIGHT */
 .attractions-text {
-  width: 33%;
+  width: 40%;
 }
 
 .attractions-text p {
@@ -91,8 +89,8 @@
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-right: 0.5rem;
-  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-left: 0rem;
 }
 
 /* MEDIA QUERY CHANGES */
