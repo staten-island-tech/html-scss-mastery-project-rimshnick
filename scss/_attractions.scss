@@ -9,13 +9,12 @@
   width: 100%;
   height: auto;
   padding-bottom: 8rem;
-  padding-top: 12rem;
+  padding-top: 9rem;
 }
 
 /* ATTRACTIONS LABEL */
 .attractions-label {
-  padding-left: 2rem;
-  padding-right: 5rem;
+  padding-right: 2rem;
   font-size: 9rem;
   width: 25%;
 }
@@ -23,74 +22,54 @@
 /* IMAGES */
 .attractions-image-parent {
   width: 60rem;
-  height: 40rem;
-  padding: 2rem 2rem 2rem 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  @include flex-row-center;
-  justify-content: center;
+  height: 60rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include flex-col-center;
+  font-size: 5rem;
 }
-
-.attractions-images {
-  margin: 3rem;
-  position: relative;
-  @include flex-row-center;
-  width: 45rem;
-  height: 38rem;
-  overflow: hidden;
-}
-
-.attractions-images img {
-  position: absolute;
-  animation: attractions-images 28s infinite;
-  opacity: 0;
+.empire {
+  background-image: url("./img/empire-attractions.jpg");
+  background-position: center;
   width: 100%;
-  height: auto;
+  height: 25%;
+  position: relative;
 }
-
-@keyframes attractions-images {
-  25% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
+.liberty {
+  background-image: url("./img/liberty-attractions.jpg");
+  background-position: center;
+  width: 100%;
+  height: 25%;
+  position: relative;
 }
-.attractions-images img:nth-child(7) {
-  animation-delay: 24s;
+.times {
+  background-image: url("./img/times-square-attractions.jpg");
+  background-position: center;
+  width: 100%;
+  height: 25%;
+  position: relative;
 }
-.attractions-images img:nth-child(6) {
-  animation-delay: 20s;
-}
-.attractions-images img:nth-child(5) {
-  animation-delay: 16s;
-}
-.attractions-images img:nth-child(4) {
-  animation-delay: 12s;
-}
-.attractions-images img:nth-child(3) {
-  animation-delay: 8s;
-}
-.attractions-images img:nth-child(2) {
-  animation-delay: 4s;
-}
-.attractions-images img:nth-child(1) {
-  animation-delay: 0s;
+.radiocity {
+  background-image: url("./img/radiocity-attractions.jpg");
+  background-position: center;
+  width: 100%;
+  height: 25%;
+  position: relative;
 }
 
 /* TEXT ON RIGHT */
 .attractions-text {
   width: 40%;
+  padding-left: 2rem;
 }
 
 .attractions-text p {
   font-family: $small-font;
-  font-size: 2rem;
   text-align: center;
+  font-size: 1.8rem;
+  line-height: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-right: 2rem;
-  padding-left: 1rem;
 }
 
 /* MEDIA QUERY CHANGES */
