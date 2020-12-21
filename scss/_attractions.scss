@@ -1,9 +1,8 @@
 @import "_variables";
 @import "_mixins";
 
-.culture-container {
-  padding-left: 1rem;
-  @include flex-row-center;
+.attractions-container {
+  @include flex-row-rev-center;
   background-color: $primary-color-dark;
   color: $primary-color-text;
   border-top: 0.1rem $accent-color-mix solid;
@@ -13,29 +12,26 @@
   padding-top: 12rem;
 }
 
-/* CULTURE LABEL */
-.culture-label {
-  padding-left: 7.5rem;
+/* ATTRACTIONS LABEL */
+.attractions-label {
+  padding-left: 2rem;
   padding-right: 5rem;
   font-size: 9rem;
-  width: 20%;
+  width: 25%;
 }
 
 /* IMAGES */
-.culture-image-parent {
+.attractions-image-parent {
   width: 60rem;
   height: 40rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 2rem 2rem 2rem 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   @include flex-row-center;
   justify-content: center;
 }
 
-.culture-images {
+.attractions-images {
   margin: 3rem;
   position: relative;
   @include flex-row-center;
@@ -44,15 +40,15 @@
   overflow: hidden;
 }
 
-.culture-images img {
+.attractions-images img {
   position: absolute;
-  animation: culture-images 28s infinite;
+  animation: attractions-images 28s infinite;
   opacity: 0;
   width: 100%;
   height: auto;
 }
 
-@keyframes culture-images {
+@keyframes attractions-images {
   25% {
     opacity: 1;
   }
@@ -60,85 +56,87 @@
     opacity: 0;
   }
 }
-.culture-images img:nth-child(7) {
+.attractions-images img:nth-child(7) {
   animation-delay: 24s;
 }
-.culture-images img:nth-child(6) {
+.attractions-images img:nth-child(6) {
   animation-delay: 20s;
 }
-.culture-images img:nth-child(5) {
+.attractions-images img:nth-child(5) {
   animation-delay: 16s;
 }
-.culture-images img:nth-child(4) {
+.attractions-images img:nth-child(4) {
   animation-delay: 12s;
 }
-.culture-images img:nth-child(3) {
+.attractions-images img:nth-child(3) {
   animation-delay: 8s;
 }
-.culture-images img:nth-child(2) {
+.attractions-images img:nth-child(2) {
   animation-delay: 4s;
 }
-.culture-images img:nth-child(1) {
+.attractions-images img:nth-child(1) {
   animation-delay: 0s;
 }
 
 /* TEXT ON RIGHT */
-.culture-text {
+.attractions-text {
   width: 40%;
 }
 
-.culture-text p {
+.attractions-text p {
   font-family: $small-font;
   font-size: 2rem;
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 2rem;
-  padding-left: 4rem;
+  padding-left: 1rem;
 }
 
 /* MEDIA QUERY CHANGES */
 @media screen and (min-width: $desktop-max) and (max-width: 2000px) {
-  .culture-text {
+  .attractions-text {
     padding-left: 10rem;
   }
-  .culture-label {
+  .attractions-label {
     font-size: 10rem;
   }
-  .culture-text p {
+  .attractions-text p {
     font-size: 2.25rem;
     padding-right: 0rem;
   }
 }
 
 @media screen and (max-width: $small-window-max) {
-  .culture-images {
+  .attractions-images {
     //width: 35rem;
     //height: 30rem;
   }
-  .culture-container {
+  .attractions-container {
     @include flex-col-center;
     justify-content: space-between;
   }
-  .culture-label {
+  .attractions-label {
     padding-top: 2rem;
+    padding-right: 0;
+    padding-left: 0;
     width: auto;
   }
-  .culture-image-parent {
+  .attractions-image-parent {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  .culture-images {
+  .attractions-images {
     width: 40rem;
     height: 35rem;
   }
-  .culture-text {
+  .attractions-text {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
   }
-  .culture-text p {
+  .attractions-text p {
     padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 1rem;

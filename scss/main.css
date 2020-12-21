@@ -255,13 +255,16 @@ a:focus {
     margin-top: 0rem;
   }
   .empire {
-    width: 2.5rem;
-    height: 3.5rem;
-    padding-top: 1rem;
+    width: 0rem;
+    height: 0rem;
+    padding-top: 0rem;
   }
   .empire img {
-    width: 2.5rem;
-    height: 3.5rem;
+    width: 0rem;
+    height: 0rem;
+  }
+  .empire img {
+    display: none;
   }
 }
 
@@ -271,6 +274,9 @@ a:focus {
     font-size: 2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+  .empire img {
+    display: none;
   }
 }
 
@@ -285,6 +291,9 @@ a:focus {
   .empire img {
     width: 0rem;
     height: 0rem;
+  }
+  .empire img {
+    display: none;
   }
 }
 
@@ -425,7 +434,7 @@ a:focus {
 
 /* CULTURE LABEL */
 .culture-label {
-  padding-left: 5rem;
+  padding-left: 7.5rem;
   padding-right: 5rem;
   font-size: 9rem;
   width: 20%;
@@ -435,7 +444,10 @@ a:focus {
 .culture-image-parent {
   width: 60rem;
   height: 40rem;
-  padding: 2rem 2rem 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -535,7 +547,7 @@ a:focus {
 
 /* TEXT ON RIGHT */
 .culture-text {
-  width: 35%;
+  width: 40%;
 }
 
 .culture-text p {
@@ -544,7 +556,7 @@ a:focus {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-right: 4rem;
+  padding-right: 2rem;
   padding-left: 4rem;
 }
 
@@ -597,6 +609,226 @@ a:focus {
     padding-top: 1rem;
   }
   .culture-text p {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+/* colors */
+/* font */
+/* media query - device sizes */
+/*font*/
+/*@mixin media-query-mobile {
+  @media screen and (max-width: 480px);
+}
+
+@mixin media-query-tablet {
+  @media screen and (min-width: 481px) and (max-width: 769px);
+}
+
+@mixin media-query-laptop {
+  @media screen and (min-width: 769px) and (max-width: 1024px);
+}
+
+@mixin media-query-desktop {
+  @media screen and (min-width: 1025px) and (max-width: 1200px);*/
+.attractions-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  color: #fff;
+  border-top: 0.1rem #00ffdd solid;
+  width: 100%;
+  height: auto;
+  padding-bottom: 8rem;
+  padding-top: 12rem;
+}
+
+/* ATTRACTIONS LABEL */
+.attractions-label {
+  padding-left: 2rem;
+  padding-right: 5rem;
+  font-size: 9rem;
+  width: 25%;
+}
+
+/* IMAGES */
+.attractions-image-parent {
+  width: 60rem;
+  height: 40rem;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attractions-images {
+  margin: 3rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45rem;
+  height: 38rem;
+  overflow: hidden;
+}
+
+.attractions-images img {
+  position: absolute;
+  -webkit-animation: attractions-images 28s infinite;
+          animation: attractions-images 28s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes attractions-images {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes attractions-images {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.attractions-images img:nth-child(7) {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.attractions-images img:nth-child(6) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.attractions-images img:nth-child(5) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.attractions-images img:nth-child(4) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.attractions-images img:nth-child(3) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.attractions-images img:nth-child(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.attractions-images img:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+/* TEXT ON RIGHT */
+.attractions-text {
+  width: 40%;
+}
+
+.attractions-text p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+
+/* MEDIA QUERY CHANGES */
+@media screen and (min-width: 1400px) and (max-width: 2000px) {
+  .attractions-text {
+    padding-left: 10rem;
+  }
+  .attractions-label {
+    font-size: 10rem;
+  }
+  .attractions-text p {
+    font-size: 2.25rem;
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .attractions-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .attractions-label {
+    padding-top: 2rem;
+    padding-right: 0;
+    padding-left: 0;
+    width: auto;
+  }
+  .attractions-image-parent {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .attractions-images {
+    width: 40rem;
+    height: 35rem;
+  }
+  .attractions-text {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .attractions-text p {
     padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 1rem;
