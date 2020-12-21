@@ -90,7 +90,7 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 2rem;
-  padding-left: 0rem;
+  padding-left: 1rem;
 }
 
 /* MEDIA QUERY CHANGES */
@@ -118,6 +118,8 @@
   }
   .attractions-label {
     padding-top: 2rem;
+    padding-right: 0;
+    padding-left: 0;
     width: auto;
   }
   .attractions-image-parent {

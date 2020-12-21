@@ -434,7 +434,7 @@ a:focus {
 
 /* CULTURE LABEL */
 .culture-label {
-  padding-left: 5rem;
+  padding-left: 7.5rem;
   padding-right: 5rem;
   font-size: 9rem;
   width: 20%;
@@ -444,7 +444,10 @@ a:focus {
 .culture-image-parent {
   width: 60rem;
   height: 40rem;
-  padding: 2rem 2rem 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -772,7 +775,7 @@ a:focus {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 2rem;
-  padding-left: 0rem;
+  padding-left: 1rem;
 }
 
 /* MEDIA QUERY CHANGES */
@@ -807,6 +810,8 @@ a:focus {
   }
   .attractions-label {
     padding-top: 2rem;
+    padding-right: 0;
+    padding-left: 0;
     width: auto;
   }
   .attractions-image-parent {
