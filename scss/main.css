@@ -437,7 +437,7 @@ a:focus {
 
 /* CULTURE LABEL */
 .culture-label {
-  padding-left: 2rem;
+  padding-left: 4rem;
   font-size: 9rem;
   width: 20%;
 }
@@ -634,6 +634,7 @@ a:focus {
 @mixin media-query-desktop {
   @media screen and (min-width: 1025px) and (max-width: 1200px);*/
 .attractions-container {
+  padding-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,6 +646,8 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-color: #000000;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #fff;
   border-top: 0.1rem #00ffdd solid;
   width: 100%;
@@ -655,17 +658,18 @@ a:focus {
 
 /* ATTRACTIONS LABEL */
 .attractions-label {
-  padding-right: 2rem;
+  padding-left: 8rem;
   font-size: 9rem;
   width: 25%;
 }
 
 /* IMAGES */
 .attractions-image-parent {
-  width: 60rem;
+  width: 50rem;
   height: 60rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-right: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,42 +683,73 @@ a:focus {
   font-size: 5rem;
 }
 
-.empire {
-  background-image: url("./img/empire-attractions.jpg");
+.attraction {
   background-position: center;
-  width: 100%;
-  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50rem;
+  height: 15rem;
   position: relative;
+}
+
+.attraction h {
+  font-size: 3.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.empirestate {
+  background-image: url("../img/empire-attractions.jpg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.empirestate:hover {
+  height: 100rem;
 }
 
 .liberty {
-  background-image: url("./img/liberty-attractions.jpg");
-  background-position: center;
-  width: 100%;
-  height: 25%;
-  position: relative;
+  background-image: url("../img/liberty-attractions.jpg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.liberty:hover {
+  height: 100rem;
 }
 
 .times {
-  background-image: url("./img/times-square-attractions.jpg");
-  background-position: center;
-  width: 100%;
-  height: 25%;
-  position: relative;
+  background-image: url("../img/times-square-attractions.jpg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.times:hover {
+  height: 100rem;
 }
 
 .radiocity {
-  background-image: url("./img/radiocity-attractions.jpg");
-  background-position: center;
-  width: 100%;
-  height: 25%;
-  position: relative;
+  background-image: url("../img/radiocity-attractions.jpg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.radiocity:hover {
+  height: 100rem;
 }
 
 /* TEXT ON RIGHT */
 .attractions-text {
   width: 40%;
-  padding-left: 2rem;
+  padding-right: 11rem;
+  padding-left: 6rem;
 }
 
 .attractions-text p {
@@ -729,14 +764,26 @@ a:focus {
 /* MEDIA QUERY CHANGES */
 @media screen and (min-width: 1400px) and (max-width: 2000px) {
   .attractions-text {
-    padding-left: 10rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
   }
   .attractions-label {
     font-size: 10rem;
+    padding-left: 2rem;
   }
   .attractions-text p {
     font-size: 2.25rem;
     padding-right: 0rem;
+  }
+  .attractions-image-parent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: small-window-max) and (max-width: desktop-max) {
+  .attractions-label {
+    padding-left: 2rem;
   }
 }
 
@@ -765,10 +812,6 @@ a:focus {
   .attractions-image-parent {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-  }
-  .attractions-images {
-    width: 40rem;
-    height: 35rem;
   }
   .attractions-text {
     width: 100%;
