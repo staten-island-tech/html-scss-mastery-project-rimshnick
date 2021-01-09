@@ -121,6 +121,7 @@
   .culture-label {
     padding-top: 2rem;
     width: auto;
+    padding-left: 0rem;
   }
   .culture-image-parent {
     margin-top: 0.5rem;
@@ -141,5 +142,15 @@
     padding-left: 2rem;
     padding-top: 1rem;
     //font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: $mobile-max) {
+  .culture-label {
+    font-size: 7rem;
+  }
+  .culture-text p {
+    font-size: 1.4rem;
+    text-align: left;
   }
 }

@@ -121,10 +121,11 @@
   }
 }
 
-@media screen and (max-width: $small-window-max) {
+@media screen and (min-width: $tablet-min) and (max-width: $small-window-max) {
   .attractions-container {
     @include flex-col-center;
     justify-content: space-between;
+    padding-right: 0rem;
   }
   .attractions-label {
     padding-top: 2rem;
@@ -135,18 +136,80 @@
   .attractions-image-parent {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    font-size: 2rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
   }
-
   .attractions-text {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 5rem;
   }
   .attractions-text p {
     padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 1rem;
     //font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: $mobile-max) {
+  .attractions-container {
+    @include flex-col-center;
+    justify-content: space-between;
+    padding-right: 0rem;
+  }
+  .attractions-label {
+    padding-top: 2rem;
+    padding-right: 0;
+    padding-left: 0;
+    width: auto;
+    font-size: 7rem;
+  }
+  .attractions-image-parent {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+  }
+  .attractions-text {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+  }
+  .attractions-text p {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .attraction {
+    width: 60%;
+    height: 15rem;
+  }
+  .attraction h {
+    display: none;
+  }
+  .attraction:hover {
+    height: 15rem;
+  }
+  .empirestate {
+    background-image: url("../img/empire-mobile.jpg");
+    background-size: cover;
+  }
+  .liberty {
+    background-image: url("../img/liberty-mobile.jpg");
+    background-size: cover;
+  }
+  .times {
+    background-image: url("../img/times-square-mobile.jpg");
+    background-size: cover;
+  }
+  .radiocity {
+    background-image: url("../img/radiocity-mobile.jpg");
+    background-size: cover;
   }
 }
