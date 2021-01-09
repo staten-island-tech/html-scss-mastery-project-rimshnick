@@ -623,6 +623,7 @@ a:focus {
   .culture-text p {
     font-size: 1.4rem;
     text-align: left;
+    line-height: 2.5rem;
   }
 }
 
@@ -883,6 +884,7 @@ a:focus {
     padding-top: 1rem;
     font-size: 1.4rem;
     text-align: left;
+    line-height: 2.5rem;
   }
   .attraction {
     width: 60%;
@@ -910,6 +912,90 @@ a:focus {
     background-image: url("../img/radiocity-mobile.jpg");
     background-size: cover;
   }
+}
+
+/* colors */
+/* font */
+/* media query - device sizes */
+/*font*/
+/*@mixin media-query-mobile {
+  @media screen and (max-width: 480px);
+}
+
+@mixin media-query-tablet {
+  @media screen and (min-width: 481px) and (max-width: 769px);
+}
+
+@mixin media-query-laptop {
+  @media screen and (min-width: 769px) and (max-width: 1024px);
+}
+
+@mixin media-query-desktop {
+  @media screen and (min-width: 1025px) and (max-width: 1200px);*/
+.restaurants-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  border-top: 0.1rem #00ffdd solid;
+  height: auto;
+  padding-bottom: 8rem;
+  padding-top: 9rem;
+}
+
+.restaurants-label {
+  font-size: 9rem;
+}
+
+.restaurants-image-parent {
+  padding: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.restaurant-image {
+  width: 30%;
+  height: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.restaurants-text p {
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  width: 100%;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 html,

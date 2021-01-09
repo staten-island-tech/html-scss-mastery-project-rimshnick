@@ -3,12 +3,43 @@
 
 .restaurants-container {
   @include flex-col-center;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: $primary-color-dark;
   color: $primary-color-text;
   border-top: 0.1rem $accent-color-mix solid;
-  width: 100%;
   height: auto;
   padding-bottom: 8rem;
   padding-top: 9rem;
+}
+
+.restaurants-label {
+  font-size: 9rem;
+}
+
+.restaurants-image-parent {
+  padding: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  @include flex-row-center;
+  justify-content: space-evenly;
+}
+.restaurant-image {
+  width: 30%;
+  height: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.restaurants-text p {
+  font-family: $small-font;
+  text-align: center;
+  width: 100%;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
