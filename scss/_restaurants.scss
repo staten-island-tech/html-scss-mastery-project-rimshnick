@@ -16,20 +16,77 @@
   font-size: 9rem;
 }
 
-.restaurants-image-parent {
-  padding: 3rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  @include flex-row-center;
-  justify-content: space-evenly;
+.restaurants {
+  color: transparent;
+  font-size: 3rem;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
-.restaurant-image {
-  width: 30%;
-  height: auto;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+
+.katz {
+  background-image: url("/img/katz-deli-restaurants.jpg");
+  filter: grayscale(25%);
+  background-position: center;
+  background-size: cover;
+  //-webkit-text-stroke: 0.1rem $primary-color-dark;
+  height: 15rem;
+  width: 25%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  position: relative;
+  border-radius: 0.3rem;
+  transition: all 0.4s ease;
+}
+.katz:hover {
+  background-image: url("/img/katz-deli-inside.jpg");
+  background-size: cover;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+.average {
+  background-image: url("/img/katz-deli-restaurants.jpg");
+  filter: grayscale(25%);
+  background-position: center;
+  background-size: cover;
+  //-webkit-text-stroke: 0.1rem $accent-color-mix;
+  height: 15rem;
+  width: 25%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  position: relative;
+  border-radius: 0.3rem;
+  transition: all 0.4s ease;
+}
+.average:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+.expensive {
+  background-image: url("/img/katz-deli-restaurants.jpg");
+  filter: grayscale(25%);
+  background-position: center;
+  background-size: cover;
+  //-webkit-text-stroke: 0.1rem $accent-color-mix;
+  height: 15rem;
+  width: 25%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  position: relative;
+  border-radius: 0.3rem;
+  transition: all 0.4s ease;
+}
+.expensive:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  border-radius: 1rem;
 }
 
 .restaurants-text p {
