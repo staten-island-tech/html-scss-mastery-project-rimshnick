@@ -962,7 +962,7 @@ a:active {
   background-color: #000000;
   color: #fff;
   height: auto;
-  padding-bottom: 8rem;
+  padding-bottom: 0rem;
   padding-top: 10rem;
 }
 
@@ -1181,6 +1181,204 @@ a:active {
     width: 50%;
     height: 15rem;
   }
+}
+
+/* colors */
+/* font */
+/* media query - device sizes */
+/*font*/
+/*@mixin media-query-mobile {
+  @media screen and (max-width: 480px);
+}
+
+@mixin media-query-tablet {
+  @media screen and (min-width: 481px) and (max-width: 769px);
+}
+
+@mixin media-query-laptop {
+  @media screen and (min-width: 769px) and (max-width: 1024px);
+}
+
+@mixin media-query-desktop {
+  @media screen and (min-width: 1025px) and (max-width: 1200px);*/
+.more-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  border-top: 0.1rem #00ffdd solid;
+  height: auto;
+  padding-bottom: 8rem;
+  padding-top: 10rem;
+}
+
+.more-label {
+  font-size: 9rem;
+  padding-bottom: 2rem;
+}
+
+.more-circles {
+  color: transparent;
+  font-size: 3rem;
+  width: 80%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.news {
+  background: transparent;
+  height: 20rem;
+  width: 20rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  border-bottom: 0.4rem #00ffdd solid;
+}
+
+.news a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
+
+.news h {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 4rem;
+  color: white;
+}
+
+.news:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-radius: 1rem;
+}
+
+.news:active {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+.weather {
+  background: transparent;
+  height: 20rem;
+  width: 20rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  border-bottom: 0.4rem #00ffdd solid;
+}
+
+.weather a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
+
+.weather h {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 4rem;
+  color: white;
+}
+
+.weather:active {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+.weather:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-radius: 1rem;
+}
+
+.contactus {
+  background: transparent;
+  height: 20rem;
+  width: 20rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  border-bottom: 0.4rem #00ffdd solid;
+}
+
+.contactus a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
+
+.contactus h {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 4rem;
+  color: white;
+}
+
+.contactus:active {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+.contactus:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-radius: 1rem;
 }
 
 html,
