@@ -159,6 +159,11 @@ a:focus {
   font-weight: bold;
 }
 
+a:active {
+  -webkit-transform: translateY(0.7rem);
+          transform: translateY(0.7rem);
+}
+
 .newyorkcity::after {
   content: " ";
   display: block;
