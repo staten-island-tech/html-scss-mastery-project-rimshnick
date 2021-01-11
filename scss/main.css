@@ -1217,15 +1217,15 @@ a:active {
           justify-content: center;
   background-color: #000000;
   color: #fff;
-  border-top: 0.1rem #00ffdd solid;
   height: auto;
-  padding-bottom: 8rem;
-  padding-top: 10rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  border-top: 0.1rem #00ffdd solid;
 }
 
 .more-label {
   font-size: 9rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 }
 
 .more-circles {
@@ -1245,8 +1245,9 @@ a:active {
           justify-content: center;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  top: -3rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .news {
@@ -1379,6 +1380,151 @@ a:active {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   border-radius: 1rem;
+}
+
+.more-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 3rem;
+}
+
+.more-links img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.more-links .youtube {
+  width: 4rem;
+  height: 3rem;
+}
+
+.copyright-container {
+  background: transparent;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.copy a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
+
+.copy h {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* MEDIA QUERY CHANGES */
+@media screen and (min-width: 481px) and (max-width: 1150px) {
+  .news {
+    height: 12.5rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem #00ffdd solid;
+  }
+  .weather {
+    height: 12.5rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem #00ffdd solid;
+  }
+  .contactus {
+    height: 16.5rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem #00ffdd solid;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .more-container {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+  }
+  .more-label {
+    font-size: 7rem;
+    padding-bottom: 0rem;
+  }
+  .more-circles {
+    padding-bottom: 0rem;
+  }
+  .news {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 10rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem #00ffdd solid;
+  }
+  .news h {
+    font-size: 2rem;
+  }
+  .news:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-bottom: 0.2rem #00ffdd solid;
+    border-radius: 0;
+  }
+  .weather {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 10rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem #00ffdd solid;
+  }
+  .weather h {
+    font-size: 2rem;
+  }
+  .weather:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-bottom: 0.2rem #00ffdd solid;
+    border-radius: 0;
+  }
+  .contactus {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 10rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem #00ffdd solid;
+  }
+  .contactus h {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+  }
+  .contactus:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-bottom: 0.2rem #00ffdd solid;
+    border-radius: 0;
+  }
+  .copyright-container {
+    padding-top: 0.5rem;
+  }
+  .copy h {
+    font-size: 2rem;
+  }
 }
 
 html,

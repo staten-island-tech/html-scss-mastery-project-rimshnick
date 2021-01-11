@@ -6,15 +6,15 @@
   justify-content: center;
   background-color: $primary-color-dark;
   color: $primary-color-text;
-  border-top: 0.1rem $accent-color-mix solid;
   height: auto;
-  padding-bottom: 8rem;
-  padding-top: 10rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  border-top: 0.1rem $accent-color-mix solid;
 }
 
 .more-label {
   font-size: 9rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 }
 
 .more-circles {
@@ -26,8 +26,9 @@
   flex-direction: row;
   justify-content: center;
   align-content: space-between;
+  top: -3rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .news {
@@ -141,4 +142,140 @@
 .contactus:hover {
   transform: scale(1.05);
   border-radius: 1rem;
+}
+
+.more-links {
+  @include flex-row-center;
+  top: 3rem;
+}
+.more-links img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.more-links .youtube {
+  width: 4rem;
+  height: 3rem;
+}
+
+.copyright-container {
+  background: transparent;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.copy a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
+.copy h {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* MEDIA QUERY CHANGES */
+@media screen and (min-width: small-window-max) and (max-width: desktop-max) {
+}
+
+@media screen and (min-width: $tablet-min) and (max-width: $small-window-max) {
+  .news {
+    height: 12.5rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem $accent-color-mix solid;
+  }
+  .weather {
+    height: 12.5rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem $accent-color-mix solid;
+  }
+  .contactus {
+    height: 16.5rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem $accent-color-mix solid;
+  }
+}
+
+@media screen and (max-width: $mobile-max) {
+  .more-container {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+  }
+
+  .more-label {
+    font-size: 7rem;
+    padding-bottom: 0rem;
+  }
+
+  .more-circles {
+    padding-bottom: 0rem;
+  }
+  .news {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 10rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem $accent-color-mix solid;
+  }
+  .news h {
+    font-size: 2rem;
+  }
+  .news:hover {
+    transform: scale(1);
+    border-bottom: 0.2rem $accent-color-mix solid;
+    border-radius: 0;
+  }
+
+  .weather {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 10rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem $accent-color-mix solid;
+  }
+  .weather h {
+    font-size: 2rem;
+  }
+  .weather:hover {
+    transform: scale(1);
+    border-bottom: 0.2rem $accent-color-mix solid;
+    border-radius: 0;
+  }
+  .contactus {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 10rem;
+    width: 12rem;
+    border-radius: 0%;
+    border-bottom: 0.2rem $accent-color-mix solid;
+  }
+  .contactus h {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+  }
+  .contactus:hover {
+    transform: scale(1);
+    border-bottom: 0.2rem $accent-color-mix solid;
+    border-radius: 0;
+  }
+  .copyright-container {
+    padding-top: 0.5rem;
+  }
+  .copy h {
+    font-size: 2rem;
+  }
 }
