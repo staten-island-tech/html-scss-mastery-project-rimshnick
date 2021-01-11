@@ -6,10 +6,10 @@
   justify-content: center;
   background-color: $primary-color-dark;
   color: $primary-color-text;
-  border-top: 0.1rem $accent-color-mix solid;
+  //border-top: 0.1rem $accent-color-mix solid;
   height: auto;
   padding-bottom: 8rem;
-  padding-top: 9rem;
+  padding-top: 10rem;
 }
 
 .restaurants-label {
@@ -42,6 +42,18 @@
   border-radius: 0.3rem;
   transition: all 0.4s ease;
 }
+.katz a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
 .katz:hover {
   background-image: url("/img/katz-deli-inside.jpg");
   background-size: cover;
@@ -61,6 +73,18 @@
   position: relative;
   border-radius: 0.3rem;
   transition: all 0.4s ease;
+}
+.sugar a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
 }
 .sugar:hover {
   background-image: url("/img/sugar-factory-inside.jpg");
@@ -82,6 +106,18 @@
   border-radius: 0.3rem;
   transition: all 0.4s ease;
 }
+.russiantearoom a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
 .russiantearoom:hover {
   background-image: url("/img/russian-tea-room-inside.jpg");
   background-size: cover;
@@ -100,4 +136,70 @@
   padding-right: 6rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+/* MEDIA QUERY CHANGES */
+@media screen and (min-width: $desktop-max) and (max-width: 2000px) {
+}
+
+@media screen and (min-width: small-window-max) and (max-width: desktop-max) {
+  .restaurants-text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: $tablet-min) and (max-width: $small-window-max) {
+  .restaurants-text p {
+    font-size: 1.8rem;
+  }
+  .katz {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .sugar {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .russiantearoom {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: $mobile-max) {
+  .restaurants-container {
+    padding-top: 2rem;
+  }
+  .restaurants-label {
+    font-size: 7rem;
+  }
+  .restaurants-text p {
+    font-size: 1.4rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    text-align: left;
+  }
+  .restaurants {
+    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
+    width: 90%;
+  }
+  .katz {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 50%;
+    height: 15rem;
+  }
+  .sugar {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 50%;
+    height: 15rem;
+  }
+  .russiantearoom {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 50%;
+    height: 15rem;
+  }
 }

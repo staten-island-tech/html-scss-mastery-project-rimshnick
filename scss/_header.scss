@@ -31,22 +31,18 @@
   -webkit-text-stroke-color: black;
 }
 
-@media screen and (min-width: 1180px) and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .video-text {
-    top: 35%;
+    top: 45%;
   }
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: $mobile-max) {
   .video-text {
     font-size: 8rem;
+    top: 35%;
   }
   .video-and-text {
-    margin-top: 14rem;
-  }
-}
-@media screen and (max-width: 1179px) {
-  .video-and-text {
-    margin-top: 14rem;
+    margin-top: 10rem;
   }
 }

@@ -10,7 +10,7 @@
   border-top: 0.1rem $accent-color-mix solid;
   width: 100%;
   height: auto;
-  padding-bottom: 8rem;
+  padding-bottom: 0rem;
   padding-top: 9rem;
 }
 
@@ -146,8 +146,16 @@
 }
 
 @media screen and (max-width: $mobile-max) {
+  .culture-container {
+    padding-bottom: 0rem;
+    padding-top: 2rem;
+    padding-left: 0rem;
+  }
   .culture-label {
     font-size: 7rem;
+  }
+  .culture-image-parent {
+    width: 95%;
   }
   .culture-text p {
     font-size: 1.4rem;

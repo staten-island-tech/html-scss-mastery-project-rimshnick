@@ -7,10 +7,10 @@
   background-color: $primary-color-dark;
   justify-content: space-around;
   color: $primary-color-text;
-  border-top: 0.1rem $accent-color-mix solid;
+  //border-top: 0.1rem $accent-color-mix solid;
   width: 100%;
   height: auto;
-  padding-bottom: 8rem;
+  padding-bottom: 0rem;
   padding-top: 9rem;
 }
 
@@ -159,6 +159,8 @@
     @include flex-col-center;
     justify-content: space-between;
     padding-right: 0rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
   }
   .attractions-label {
     padding-top: 2rem;
@@ -177,7 +179,7 @@
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0rem;
   }
   .attractions-text p {
     padding-right: 2rem;
