@@ -51,6 +51,18 @@
   background-image: url("../img/empire-attractions.jpg");
   transition: all 0.2s ease;
 }
+.empirestate a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
 .empirestate:hover {
   height: 100rem;
 }
@@ -58,6 +70,18 @@
 .liberty {
   background-image: url("../img/liberty-attractions.jpg");
   transition: all 0.2s ease;
+}
+.liberty a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
 }
 .liberty:hover {
   height: 100rem;
@@ -67,6 +91,18 @@
   background-image: url("../img/times-square-attractions.jpg");
   transition: all 0.2s ease;
 }
+.times a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
 .times:hover {
   height: 100rem;
 }
@@ -74,6 +110,18 @@
 .radiocity {
   background-image: url("../img/radiocity-attractions.jpg");
   transition: all 0.2s ease;
+}
+.radiocity a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=1);
 }
 .radiocity:hover {
   height: 100rem;
